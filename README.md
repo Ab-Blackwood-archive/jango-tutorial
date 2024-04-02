@@ -1,6 +1,5 @@
 # jango-tutorial
 
-## Step 1: Creat a proj
--> django-admin stratproject [prject name here]  
-or
+## Step 1: Create a proj
+-> django-admin stratproject [project name here]  
 -> python -m django startproject [project name]
