@@ -21,5 +21,7 @@
 
 -> `python manage.py migrate`
 
-## Step 5:
+## Step 5: create superuser
+-> cd into folder w manage.py
+-> `python manage.py createsuperuser`
 
