@@ -7,3 +7,6 @@
 -> django-admin startapp [app name here]
 
 -> python manage.py startapp [app name here]
+## Step 3: run web server
+-> cd into the project folder where manage.py is located
+-> run 'python manage.py runserver'
