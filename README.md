@@ -29,10 +29,17 @@
 
 ->`'app_name',`
 
-## Step 7:
+## Step 7: add template folder
+-> `'DIRS': [BASE_DIR /  'templates']`,
 
-## Step 8:
+-> Add template folder inside app folder
 
-## Step 9:
+## View Fuction
+```
+def base(request):
+    context ={
 
-## Step 10:
+    }
+
+    return render(request, 'base.html', context)
+```
