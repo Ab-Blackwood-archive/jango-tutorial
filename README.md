@@ -35,7 +35,7 @@
 -> Add template folder inside app folder
 
 ## View Fuction
-```
+```python
 def base(request):
     context ={
 
