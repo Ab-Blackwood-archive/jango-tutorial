@@ -22,12 +22,14 @@
 -> cd into folder w manage.py
 
 -> `python manage.py createsuperuser`
-## Step 6:
-
+## Step 6: add app to setting `Installed apps Dictionary`
+-> `INSTALLED APPS = [
+->`...
+->`'app_name',`
 ## Step 7:
 
-##Step 8:
+## Step 8:
 
-##Step 9:
+## Step 9:
 
 ## Step 10:
