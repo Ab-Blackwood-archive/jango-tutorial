@@ -23,7 +23,7 @@
 
 -> `python manage.py createsuperuser`
 ## Step 6: add app to setting Installed apps Dictionary
--> `INSTALLED APPS = [
+-> `INSTALLED APPS = [`
 
 ->`...
 
