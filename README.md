@@ -43,3 +43,19 @@ def base(request):
 
     return render(request, 'base.html', context)
 ```
+## Step 8: add apps urls.py to Proj Urls.py
+```python    
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('tutorialapp.urls')),
+]
+```
+## Step 9: add apps url.py to apps folder
+```python
+from django.urls import path, include
+from. import views
+
+urlpatterns = [
+    path('base/', views.base, name='base')
+]
+```
