@@ -9,7 +9,7 @@ def base(request):
 
     return render(request, 'base.html', context)
 
-def base(request):
+def home(request):
     context ={
 
     }
