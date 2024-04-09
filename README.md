@@ -61,7 +61,7 @@ urlpatterns = [
 ```
 ## inheriting code from a template 
 ### base.html
-```python
+```
 {% block content %}
 
 
@@ -70,7 +70,7 @@ urlpatterns = [
 ```
 
 ### Template
-```python
+```
 {% load static %}
 
 {% include 'base.html' %}
