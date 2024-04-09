@@ -64,8 +64,6 @@ urlpatterns = [
 ```
 {% block content %}
 
-
-
 {% endblock %}
 ```
 
