@@ -71,3 +71,14 @@ urlpatterns = [
 ```
 {% extends 'base.html' %}
 ```
+## Making changes to the Database
+### Step 1 Saving changes
+```
+python manage.py makemigrations
+```
+###Step 2: Building Changes into the database
+```
+python manage.py migrate
+
+
+
