@@ -8,7 +8,8 @@ class Student(models.Model):
         ('10','10'),
         ('11','11'),
         ('12','12'),
-        )
+    )
+    
     firstname = models.CharField(max_length=200, null =True)
     lastname = models.CharField(max_length=200, null =True)
     middlename = models.CharField(max_length=200, null =True)
