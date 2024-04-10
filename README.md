@@ -79,6 +79,7 @@ python manage.py makemigrations
 ###Step 2: Building Changes into the database
 ```
 python manage.py migrate
+```
 
 
 
