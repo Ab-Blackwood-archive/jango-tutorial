@@ -1,4 +1,4 @@
-{% load static %}
+
 <!doctype <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -27,12 +27,12 @@
               <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'base' %}">base</a>
                 <li class="nav-item">
-                    <a class="nav-link Students" Students="true">Students</a>
+                    <a class="nav-link" href="{% url 'students' %}">Students</a>
                   </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
