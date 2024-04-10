@@ -69,7 +69,5 @@ urlpatterns = [
 
 ### Template
 ```
-{% load static %}
-
-{% include 'base.html' %}
+{% extends 'base.html' %}
 ```
