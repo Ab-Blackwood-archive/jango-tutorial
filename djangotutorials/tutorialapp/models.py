@@ -9,11 +9,11 @@ class Student(models.Model):
         ('11','11'),
         ('12','12'),
     )
-    
+
     firstname = models.CharField(max_length=200, null =True)
     lastname = models.CharField(max_length=200, null =True)
     middlename = models.CharField(max_length=200, null =True)
     grade = models.CharField(max_length=200, null =True, choices=GRADES)
 
     def __str__(self): 
-        return "" + str(self.lastname) + ", " + str(self.firstname)
+        return "" + str(self.lastname) + ", " + str(self.firstname) + "Grade " + str(self.grade)

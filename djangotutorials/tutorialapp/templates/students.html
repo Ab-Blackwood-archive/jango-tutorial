@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+<br> <br> <br>
+
+<!--everythiNg thT IS UNIQUE SHOULD BE ENTERED BELOW-->
+<center><h1> Students<h1></center>
+
+    <table class="table table-dark table-striped">
+        
+        
+        <thead>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Grade</th>
+
+        <thead>
+
+        {% for i in students %}
+            <tr>
+                <td>{{ i.lastname }}</td>
+                <td>{{ i.firstname }}</td>
+                <td>{{ i.middlename }}</td>
+                <td>{{ i.grade }}</td>
+        {% endfor %}
+
+
+
+
+      </table>
+
+
+{% endblock %}
+
+
