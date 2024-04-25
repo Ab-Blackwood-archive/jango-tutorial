@@ -50,10 +50,10 @@ def teacherform(request):
         requests = form.save(commit=False)
 
         firstname = form.cleaned_data['firstname']
-        lastname = form.cleaned_data['lasttname']
+        lastname = form.cleaned_data['lastname']
         middlename = form.cleaned_data['middlename']
         subject = form.cleaned_data['subject']
-        roomnumber = form.cleaned_data['roomnumber']
+        roomnumber = form.cleaned_data['roomnum']
         requests.save()
         messages.success(request,"New Teacher added successfully! ")
     else:
@@ -71,7 +71,7 @@ def studentform(request):
         requests = form.save(commit=False)
 
         firstname = form.cleaned_data['firstname']
-        lastname = form.cleaned_data['lasttname']
+        lastname = form.cleaned_data['lastname']
         middlename = form.cleaned_data['middlename']
         grade = form.cleaned_data['grade']
         requests.save()

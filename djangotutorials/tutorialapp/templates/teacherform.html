@@ -4,10 +4,6 @@
 
 {% block content %}
 <style>
-    body{
-        margin:150px;
-        width:650px;
-    }
 
 
     #message_color{
@@ -23,9 +19,9 @@
 <h1>Teacher form page</h1>
 
 <div class = "card">
-    <div class="card-body"
-        {% if messages|length > 0 %}
-            {% for messages in messages %}
+    <div class="card-body">
+                {% if messages|length > 0 %}
+            {% for message in messages %}
             <span id="message_color">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
                     <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
@@ -34,14 +30,13 @@
             </span>
             {% endfor %}
         {% endif %}
-        <form method="post" action="" id="teacherform" >
+        <form method="post" action="" id="studentform" >
             {% csrf_token %}       
-        {{ form.as_p}}
-
-        <button type="submit" class="btn btn-primary" value="Submit" id="teacherformbtn">
-            Submit Teacher  
-        </button>
-    </form>
+                {{ form.as_p}}
+            <p>
+                 <button type="submit" class="btn btn-primary" value="Submit" id="studentformbtn">Submit Teacher!</button>  
+            </p>
+        </form>
     </div>
 </div>
 
