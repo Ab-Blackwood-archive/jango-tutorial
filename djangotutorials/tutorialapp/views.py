@@ -52,8 +52,10 @@ def teacherform(request):
         firstname = form.cleaned_data['firstname']
         lastname = form.cleaned_data['lastname']
         middlename = form.cleaned_data['middlename']
+        gender = form.cleaned_data['gender']
         subject = form.cleaned_data['subject']
         roomnumber = form.cleaned_data['roomnum']
+        club = 
         requests.save()
         messages.success(request,"New Teacher added successfully! ")
     else:
@@ -73,7 +75,9 @@ def studentform(request):
         firstname = form.cleaned_data['firstname']
         lastname = form.cleaned_data['lastname']
         middlename = form.cleaned_data['middlename']
+        gender = form.cleaned_data['gender']
         grade = form.cleaned_data['grade']
+        club = form.cleaned_data['club']
         requests.save()
 
         messages.success(request,"New Student added successfully! ")
