@@ -55,7 +55,7 @@ def teacherform(request):
         gender = form.cleaned_data['gender']
         subject = form.cleaned_data['subject']
         roomnumber = form.cleaned_data['roomnum']
-        club = 
+        club = form.cleaned_data['club']
         requests.save()
         messages.success(request,"New Teacher added successfully! ")
     else:

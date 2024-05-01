@@ -30,6 +30,7 @@ class Student(models.Model):
         ('chess','chess'),
         ('gardening','gardening'),
         ('theater','theater'),
+        ('')
     )
 
     firstname = models.CharField(max_length=200, null =True)
@@ -87,7 +88,7 @@ class Teacher(models.Model):
     club = models.CharField(max_length=200, null =True, choices=CLUB)
 
     def __str__(self): 
-        return "" + str(self.lastname) + ", " + str(self.firstname) + " Subject-- " + str(self.subject) + ", Room Number " + str(self.roomnum)
+        return "" + str(self.lastname) + ", " + str(self.firstname) + " Subject-- " + str(self.subject) + ", Room Number " + str(self.roomnum) + " club lead " + str(self.club) + ", Gender " + str(self.gender)
 
 
 

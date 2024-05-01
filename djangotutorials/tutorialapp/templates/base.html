@@ -34,8 +34,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'students' %}">students</a>
                   </li>
+                  {% if request.user.groups.all.0.name == "student " and request.user.groups.all.name == "teacher" %}
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'teachers' %}">teachers</a>
+                  <li/>
+                  {% endif %}
+                
+                    {% if user.is_authenticated %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">logout</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'signin' %}">signin</a>
+                {% else %}
+
+                {% endif%}
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                   <ul class="dropdown-menu">
